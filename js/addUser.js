@@ -23,38 +23,50 @@ clearForm = () => {
 
 
 function createArtistCard(name,description, url) {
+    // init card
     let cardDiv = document.createElement('div');
+
+    // init photoDiv and children
     let photoDiv = document.createElement('div');
-    let profileDiv = document.createElement('div');
-
     let img = document.createElement('img');
-    img.src = url;
-    img.alt = "photo";
 
+    // init profileDiv and children
+    let profileDiv = document.createElement('div');
     let nameP = document.createElement('p');
-    nameP.className = 'name';
-    nameP.innerText = name;
-
     let descriptionP = document.createElement('p');
-    descriptionP.className = 'description';
-    descriptionP.innerText = description;
 
+    // init deleteArtistDiv and children
+    let deleteArtistDiv = document.createElement('div');
+    let deleteArtistButton = document.createElement('button');
+    
+    //photo
     photoDiv.className = 'photo';
     photoDiv.appendChild(img);
+    
+    img.src = url;
+    img.alt = "photo";
+   
+    //profile
     profileDiv.className='profile';
     profileDiv.appendChild(nameP);
     profileDiv.appendChild(descriptionP);
 
-    let deleteArtistDiv = document.createElement('div');
-    deleteArtistDiv.className = 'deleteArtist';
-    let deleteArtistButton = document.createElement('button');
+    nameP.className = 'name';
+    nameP.innerText = name;
+   
+    descriptionP.className = 'description';
+    descriptionP.innerText = description;
+
+
+    // deleteArtist
+    deleteArtistDiv.className = 'deleteArtist';   
     deleteArtistButton.className = 'deleteArtistButton';
     deleteArtistButton.type = 'button';
     deleteArtistButton.innerText = 'DELETE';
     deleteArtistButton.addEventListener("click", (e) => deleteArtist(e));
-
     deleteArtistDiv.appendChild(deleteArtistButton);
 
+    // card
     cardDiv.className="card";
     cardDiv.appendChild(photoDiv);
     cardDiv.appendChild(profileDiv);
