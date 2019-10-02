@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#root {
+    margin: auto;
+    width: 50%;
+}
+
+#directory {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    border-style: ridge;
+    border-color: #dddddd;
+}
+
+#add-artist-panel {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    display: none;
+}
+
+#artistList {
+    margin: auto;
+    width: 80%;
+}
+
+.page-title {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.search {
+    width: 100%;
+    border: 1px solid #dddddd;
+}
+
+
+.add-artist-form {
+    display: flex;
+    flex-direction: column; 
+}
+
+.add-artist-input {
+    height: 40px;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.add-artist-button {
+    margin-top: 20px;
+    margin-left: 25%;
+    width: 50%;
+    height: 45px;
+}
+
+
+
+.card {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: #dddddd;
+}
+
+.card:hover {
+    background-color: #eeeeee;
+}
+
+.photo {
+    order: 0;
+    align-self: center;
+    width: 20%;
+}
+
+.profile {
+    order: 1;
+    padding: 10px;
+    width: 60%;
+}
+
+.deleteArtist {
+    order: 2;
+    align-self: center;
+    width: 20%
+}
+
+.name {
+    font-weight: 500;
+}
+
+.description {
+    font-weight: 300;
+    font-family: 'Mansalva', cursive;
+}
+
+.deleteArtistButton {
+    width: 100%;
+    height: 35px;
+    background-color: red;
+    border-style: 
+}
+
+
+
+
+
+
+
+
+
+
+

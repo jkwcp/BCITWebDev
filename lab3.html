@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Artist App Mockup</title>
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="root">
+            <div id="directory">
+                <p class="page-title">Artist Directory</p>
+                <input class="search">
+                <button onclick="toggleArtistForm()">Add Artist</button>
+            </div>
+            <div id="add-artist-panel">
+                <input class="add-artist-input" type="text" id="add_artist_name" name="name" placeholder="Artist Name">
+                <input class="add-artist-input" type="text" id="add_artist_description" name="description" placeholder="About Artist">
+                <input class="add-artist-input" type="text" id="add_artist_image" name="image" placeholder="Image url">
+                <button class="add-artist-button" type='submit' id="add_artist_submit" onclick="addArtist()">Add</button>
+            </div>
+           
+            <div id="artistList">
+                <!-- test data
+                <div class="card">
+                    <div class="photo">
+                        <img src="https://randomuser.me/api/portraits/med/men/95.jpg" alt="photo">
+                    </div>
+                    <div class="profile">
+                        <p class="name">nikolaj pedersen</p>
+                        <p class="description">nikolaj.pedersen@example.com</p>
+                    </div>  
+                    <div class ="deleteArtist">
+                        <button class="deleteArtistButton" type="button" onclick="deleteArtist(e)">DELETE</button>
+                    </div>   
+                </div>
+                -->
+            </div>
+            
+                
+        </div>
+        <script src="js/addUser.js"></script>
+    </body>
+</html>
