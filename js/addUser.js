@@ -72,12 +72,16 @@ makeArtist = (name, description, image) => {
 
 function searchArtist() {
     let name = document.getElementById("search-artist").value;
-    if (name === "" || name === null) return;
+    var result;
+    if (name === "" || name === null) {
+        result = readArtistList();
+    } else {
+        result = searchFromArtistList(name);
+    }
     let artistPanel = document.getElementById("artistList");
     while (artistPanel.firstChild) {
         artistPanel.removeChild(artistPanel.firstChild);
-    }
-    let result = searchFromArtistList(name);
+    } 
     showArtistLists(result);
 
 }
