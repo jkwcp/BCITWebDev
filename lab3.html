@@ -3,19 +3,23 @@
     <head>
         <title>Artist App Mockup</title>
         <link href="css/style.css" rel="stylesheet" />
+        <script src="js/addUser.js" defer></script>
     </head>
-    <body>
+    <body onload="init()">
         <div id="root">
             <div id="directory">
                 <p class="page-title">Artist Directory</p>
-                <input class="search">
-                <button onclick="toggleArtistForm()">Add Artist</button>
+                <div>
+                    <input class="search" id="search-artist">
+                    <button id="searchArtist">Search</button>
+                    <button id="triggerAddArtist">Add Artist</button>
+                </div>
             </div>
             <div id="add-artist-panel">
-                <input class="add-artist-input" type="text" id="add_artist_name" name="name" placeholder="Artist Name" maxlength="40">
-                <input class="add-artist-input" type="text" id="add_artist_description" name="description" placeholder="About Artist" maxlength="40">
-                <input class="add-artist-input" type="text" id="add_artist_image" name="image" placeholder="Image url">
-                <button class="add-artist-button" type='submit' id="add_artist_submit" onclick="addArtist()">Add</button>
+                <input class="add-artist-input" type="text" id="add-artist-name" name="name" placeholder="Artist Name" maxlength="40">
+                <input class="add-artist-input" type="text" id="add-artist-description" name="description" placeholder="About Artist" maxlength="40">
+                <input class="add-artist-input" type="text" id="add-artist-image" name="image" placeholder="Image url">
+                <button class="add-artist-button" type='submit' id="add-artist-submit">Add</button>
             </div>
            
             <div id="artistList">
@@ -37,6 +41,5 @@
             
                 
         </div>
-        <script src="js/addUser.js"></script>
     </body>
 </html>
