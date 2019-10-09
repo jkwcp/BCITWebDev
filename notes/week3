@@ -1,0 +1,80 @@
+Variables:
+    var 
+        function-scoped
+    let
+        block-scoped
+    const
+        block-scoped constant
+
+    
+
+
+Basic data types:
+    number
+    string
+    boolean
+    null
+    undefined
+    symbol
+
+
+Functions:
+    function add(x,y) { return x + y};
+    let add = (x, y) => {return x + y};
+    let add = (x, y) => x + y // one line which is return, drop return
+    let addOne = x => x + 1; // one argument, drop the round brackets
+
+
+Data structures in JS:
+..
+
+Array:
+    let a = ['a','b','c']
+
+    a.push('d');
+    a.pop()
+    a.indexOf('a'); // return -1 if not found
+    a.filter(item >= item.length <= 3) // filter creates an new array
+
+How to include Javascript:
+    <script src="scripts.js"></script>
+
+    <script src="srcipts.js" defer></script>
+
+Changing element styles:
+    need to access the style attribute
+
+    css: background-color => js: backgrounColor
+
+    let el = document.getElementById("unique");
+    el.style.fontSize = "10px"
+    el.style.color = "teal"
+
+Remove element from page:
+    parent.removeChild();
+    node.remove();
+
+JS is event driven:
+    let el = document.getElementById('id');
+    el.addEventListener('click' processData);
+
+Getting data, fetch:
+    used to load external resources(text,JSON)
+    fetch('path_to_resource')..
+    return a promise:
+
+    promise:
+        used to manage asynchronous results:
+        then(): manage success or failure
+
+        let p = new Promise((resolve,reject) => {
+            // successful
+            resolve(somevalue);
+
+            // else
+            reject(somevalue);
+        })
+
+
+
+
